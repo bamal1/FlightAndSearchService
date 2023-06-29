@@ -1,12 +1,14 @@
-const express=require('express');
-const {PORT}=require('./config/serverConfig');
+const express = require('express');
 
-const setupAndStartServer=async () =>{
+const {PORT} = require('./config/serverConfig');
+
+const setupAndStartServer = async () =>{
+    
     // create the express object
-    const app=express();
+    const app = express();
     
 
-    app.listen(PORT,()=>{
+    app.listen(PORT, () => {
         console.log(`Server start at ${PORT}`);
         
     });
